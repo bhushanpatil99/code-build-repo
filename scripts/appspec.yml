@@ -1,5 +1,0 @@
-hooks:
-  BeforeInstall:
-    - location: scripts/setup_nginx.sh
-      timeout: 300
-      runas: root
