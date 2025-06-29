@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ubuntu/app
+    destination: /usr/share/nginx/html/
 
 hooks:
   BeforeInstall:
