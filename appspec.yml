@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /home/ubuntu/app
+
+hooks:
+  BeforeInstall:
+    - location: setup_nginx.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: start_flask.sh
+      timeout: 300
+      runas: ubuntu
